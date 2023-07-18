@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="513.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="raiz.main.FXMLDocumentController">
+   <children>
+      <MenuBar layoutY="-1.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="38.0" prefWidth="388.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <menus>
+          <Menu fx:id="menuInfo" mnemonicParsing="false" onAction="#menuInfo_Action" text="info">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="file">
+            <items>
+                  <MenuItem fx:id="menuGuardar" mnemonicParsing="false" onAction="#guardar" text="guardar" />
+              <MenuItem fx:id="botonBorrar" mnemonicParsing="false" onAction="#borrar" text="borrar" />
+                  <MenuItem fx:id="abirArchivos" mnemonicParsing="false" onAction="#menuArchivos" text="Abrir" />
+                  <MenuItem fx:id="botonNuevoArchivo" mnemonicParsing="false" onAction="#nuevoArchivo" text="Nuevo Archivo" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextArea fx:id="textArea" layoutY="37.0" prefHeight="483.0" prefWidth="388.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="37.0" />
+   </children>
+</AnchorPane>

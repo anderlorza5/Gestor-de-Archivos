@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="200.0" maxWidth="339.0" prefHeight="198.0" prefWidth="339.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="raiz.crearArchivosCarpetas.CrearArchivosCarpetasFxmlController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="339.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <Pane prefHeight="108.0" prefWidth="353.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <children>
+                  <Text layoutX="141.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" />
+                  <TextField fx:id="caja_texto" layoutX="81.0" layoutY="69.0" onKeyReleased="#activar_boton" onKeyTyped="#solo_letras" />
+               </children>
+            </Pane>
+         </center>
+         <top>
+            <Pane prefHeight="61.0" prefWidth="339.0" BorderPane.alignment="TOP_CENTER">
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <children>
+                  <Button fx:id="boton_crear" disable="true" layoutX="229.0" layoutY="17.0" mnemonicParsing="false" onAction="#crear" text="create" />
+                  <Text fx:id="texto" layoutX="121.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text" />
+                  <Button fx:id="boton_cancelar" layoutX="30.0" layoutY="17.0" mnemonicParsing="false" onAction="#cerrar_ventana" text="cancel" />
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

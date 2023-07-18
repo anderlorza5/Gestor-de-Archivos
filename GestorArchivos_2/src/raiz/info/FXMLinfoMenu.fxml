@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="412.0" prefWidth="561.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="raiz.info.FXMLinfoMenuController">
+    <stylesheets>
+        
+  </stylesheets>
+   <children>
+      <BorderPane layoutX="-3.0" prefHeight="412.0" prefWidth="568.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane prefHeight="332.0" prefWidth="559.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="331.0" fitWidth="561.0">
+                     <image>
+                        <Image url="@../imagenes/descarga.jpeg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </top>
+         <center>
+            <TextArea prefHeight="200.0" prefWidth="200.0" text="esta aplicacin ha sido realizada por Ander Lorza Vergara, esta diseñada&#10; para permitir crear, modificar y borrar archivos." BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <TextField text="Copy Right DAM2 21/22" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
